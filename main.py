@@ -6,8 +6,8 @@ primes = [2, 3]
 def is_prime(x): return all(map(lambda n: x % n != 0,filter(lambda n: n < ceil(sqrt(x)), primes)))
 
 def gen_primes(n):
-    possible_primes = sorted(list(map(lambda x: 6*x + 1, range(1, n+1))) +
-                             list(map(lambda x: 6*x - 1, range(1, n+1))))
+    possible_primes = sorted(list(map(lambda x: 6*x + 1, range(1, n//2+1))) +
+                             list(map(lambda x: 6*x - 1, range(1, n//2+1))))
     p_primes = filter(is_prime, possible_primes)
     primes.extend(p_primes)
 
