@@ -13,4 +13,4 @@ def gen_primes(n):
 
 gen_primes(1000000)
 
-open('primes', 'w+').write('\n'.join(map(str, primes)))
+open('primes.txt', 'w+').write('\n'.join(map(str, primes)))
