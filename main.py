@@ -11,6 +11,6 @@ def gen_primes(n):
     p_primes = filter(is_prime, possible_primes)
     primes.extend(p_primes)
 
-gen_primes(3000000)
+gen_primes(2000000)
 
 open('primes.txt', 'w+').write('\n'.join(map(str, primes)))
